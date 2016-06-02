@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iris WebApp</title>
+    <link rel="stylesheet" href="app/css/styles.min.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="container-fluid">
+            <div id="irisMenu" class="irisMenu row">
+                <div id="MainMenu" class="menu btn-group-vertical" role="group" aria-label="...">
+                    <button id="Menu" type="button" class="btn btn-default main toggle" title="Menu"><span class="glyphicon glyphicon-menu-hamburger"></span></button>
+                    <button id="Layers" type="button" class="btn btn-default sub toggle" title="Layers"><span class="glyphicon glyphicon-list"></span></button>
+                    <button id="Views" type="button" class="btn btn-default sub toggle" title="Views"><span class="glyphicon glyphicon-eye-open"></span></button>
+                    <button id="Zoom_Selected" type="button" class="btn btn-default" title="Zoom Selected"><span class="glyphicon glyphicon-zoom-in"></span></button>
+                    <button id="Zoom_Extents" type="button" class="btn btn-default" title="Zoom Extents"><span class="glyphicon glyphicon-resize-full"></span></button>
+                    <button id="Capture_View" type="button" class="btn btn-default" title="Save View"><span class="glyphicon glyphicon-camera"></span></button>
+                    <button id="Full_Screen" type="button" class="btn btn-default" title="Full Screen"><span class="glyphicon glyphicon-fullscreen"></span></button>
+                    <!--<button id="Settings" type="button" class="btn btn-default sub toggle" title="Settings"><span class="glyphicon glyphicon-cog"></span></button>
+                    <button id="Information" type="button" class="btn btn-default sub toggle" title="Information"><span class="glyphicon glyphicon-info-sign"></span></button>-->
+                </div>
+                <div id="Panels">
+                    <div id="Panel_Layers" class="panel btn-group-vertical" role="group">
+                        <button type="button" class="btn btn-default active nohover" title="Layers"><span class="glyphicon glyphicon-list"></span></button>
+                    </div>
+                    <div id="Panel_Views" class="panel btn-group-vertical" role="group">
+                        <button type="button" class="btn btn-default active nohover" title="Views"><span class="glyphicon glyphicon-eye-open"></span></button>
+                        <button id="AddView" type="button" class="btn btn-default active" title="Add View"><span class="glyphicon glyphicon-plus"></span></button>
+                        <button id="Animate" type="button" class="btn btn-default active" title="Animate Views"><span class="glyphicon glyphicon-facetime-video"></span></button>
+                        <!--<div id="viewMod" class="btn-group-horizontal" role="group">
+                            <button id="AddView" type="button" class="btn btn-default active" title="Add View"><span class="glyphicon glyphicon-plus"></span></button>
+                            <button id="SubView" type="button" class="btn btn-default active" title="Remove View"><span class="glyphicon glyphicon-minus"></span></button>
+                        </div>-->
+                    </div>
+                    <!--<div id="Panel_Settings" class="panel btn-group-vertical" role="group">
+                        <button type="button" class="btn btn-default active nohover" title="Settings"><span class="glyphicon glyphicon-cog"></span></button>
+                    </div>
+                    <div id="Panel_Info" class="panel btn-group-vertical" role="group">
+                        <button type="button" class="btn btn-default active nohover" title="Information"><span class="glyphicon glyphicon-info-sign"></span></button>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="progressContainer">
+        <div class="progress progress-striped">
+            <div id="ProgressBar" class="progress-bar progress-bar-custom" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0;">
+                Loading...
+            </div>
+        </div>
+    </div>
+
+        <script src="app/js/iris.min.js"></script>
+
+</body>
+</html>
